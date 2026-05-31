@@ -1,0 +1,1 @@
+由于本人C盘中文路径问题，Arduino编译无法通过，尝试很多方法之后选择了最简单的方法：弃用Arduino，选择更加灵活的了vscode中的platformio插件

@@ -28,31 +28,65 @@
         <h2>课程过程以及DIY成果的文本、图片和视频</h2>
         <div class="meta">四条平行学习路线的文件、代码、模型和过程记录</div>
 
-        <div class="grid" aria-label="四条学习路线概览">
+        <div style="border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-top: 12px; background: rgba(122, 167, 255, 0.05);">
+          <h4 style="margin: 0 0 8px; font-size: 15px">Git 仓库管理与个人账户</h4>
+          <p style="margin: 0 0 8px; font-size: 13px; color: var(--muted)">
+            使用 Git 进行课程全过程版本管理，记录每次代码、文档和设计文件的迭代。
+          </p>
+          <ul style="margin: 4px 0; padding-left: 18px; font-size: 13px;">
+            <li><strong>个人 Git 账户：</strong><a href="https://gitee.com/lomi46864/my-project.git" target="_blank" rel="noopener noreferrer">https://gitee.com/lomi46864/my-project.git</a></li>
+            <li><strong>课程仓库建议：</strong>按周或按模块建立目录，例如 <code>week01</code>、<code>esp32</code>、<code>pcb</code>、<code>3d_design</code></li>
+            <li><strong>提交规范：</strong>每次实验完成后提交一次，提交信息包含日期、模块和关键改动</li>
+            <li><strong>上传内容：</strong>代码文件、过程文档、关键截图、阶段性成果说明</li>
+          </ul>
+        </div>
+
+        <div class="grid" aria-label="学习路线概览">
           <div class="card half">
-            <h3 style="margin: 0 0 8px; font-size: 18px">SolidWorks 3D建模</h3>
+            <h3 style="margin: 0 0 8px; font-size: 18px">SolidWorks 3D建模与打印</h3>
             <div class="meta" style="margin-bottom: 8px">建模基础 · 设计输出</div>
             <ul style="margin: 0; padding-left: 18px;">
-              <li><a href="../../3D_design/西门.SLDPRT">SolidWorks 零件：西门.SLDPRT</a></li>
+              <li><a href="./3D_design/西门.SLDPRT">SolidWorks 零件：西门.SLDPRT</a></li>
             </ul>
             <figure style="margin: 10px 0 0; background:#fff; padding:8px; border-radius:8px; text-align:center;">
-              <img src="../SolidWorksLearning/81EBADFF1680F57FDE80D69C9CDCD0B9.png" alt="SolidWorks 学习截图" style="width:100%; height:120px; object-fit:contain; border-radius:6px;" />
+              <img src="./SolidWorksLearning/81EBADFF1680F57FDE80D69C9CDCD0B9.png" alt="SolidWorks 学习截图" style="width:100%; height:120px; object-fit:contain; border-radius:6px;" />
               <figcaption style="font-size:12px; color:var(--muted); margin-top:6px;">SolidWorks 学习截图</figcaption>
             </figure>
+            <div style="margin-top: 10px; background:#fff; padding:8px; border-radius:8px;">
+              <div style="font-size:12px; color:var(--muted); margin-bottom:6px; text-align:center;">3D打印机学习过程截图</div>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
+                <img src="./3D_design/59B6CB3AEE80FF844C4F146F6D2F3178.png" alt="3D打印机学习过程截图 1" style="width:100%; height:90px; object-fit:cover; border-radius:6px;" />
+                <img src="./3D_design/288153BFF1C2D3DF1582B6958E19525B.png" alt="3D打印机学习过程截图 2" style="width:100%; height:90px; object-fit:cover; border-radius:6px;" />
+              </div>
+            </div>
           </div>
           <div class="card half">
             <h3 style="margin: 0 0 8px; font-size: 18px">ESP32 物联网</h3>
             <div class="meta" style="margin-bottom: 8px">PlatformIO 开发 + 9 个练习</div>
             <ul style="margin: 0; padding-left: 18px;">
-              <li><a href="../../esp32/项目说明.txt">项目说明.txt</a></li>
+              <li><a href="./esp32/项目说明.txt">项目说明.txt</a></li>
             </ul>
+            <figure style="margin: 10px 0 0; background:#fff; padding:8px; border-radius:8px;">
+              <video controls preload="metadata" style="width:100%; height:180px; border-radius:6px; background:#000; object-fit:cover;">
+                <source src="./esp32/prac/08WIFIDuoji/f749f8d5cec31dc8c89f30a6fa2254dc.mp4" type="video/mp4" />
+                您的浏览器不支持 video 标签，请下载视频查看。
+              </video>
+              <figcaption style="font-size:12px; color:var(--muted); margin-top:6px; text-align:center;">08WIFIDuoji 项目演示视频</figcaption>
+            </figure>
           </div>
           <div class="card half">
             <h3 style="margin: 0 0 8px; font-size: 18px">PCB 设计</h3>
-            <div class="meta" style="margin-bottom: 8px">立创/EasyEDA 工程文件</div>
+            <div class="meta" style="margin-bottom: 8px">立创EDA 工程文件</div>
             <ul style="margin: 0; padding-left: 18px;">
-              <li><a href="../../pcb/myPCB2.eprj2">myPCB2.eprj2</a></li>
+              <li><a href="./pcb/myPCB2.eprj2">myPCB2.eprj2</a></li>
             </ul>
+            <div style="margin-top: 10px; background:#fff; padding:8px; border-radius:8px;">
+              <div style="font-size:12px; color:var(--muted); margin-bottom:6px; text-align:center;">PCB学习过程截图</div>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px;">
+                <img src="./pcb/hw1/007e8812e3a62bf8550cf4e066a8a433.png" alt="PCB学习过程截图 1" style="width:100%; height:90px; object-fit:cover; border-radius:6px;" />
+                <img src="./pcb/PCB2/HomeWorkPCB2_1942fbbaafe14ac2a44ac58edb03e088/e6b313d4da8100e0d341254ef95e6ec4.png" alt="PCB学习过程截图 2" style="width:100%; height:90px; object-fit:cover; border-radius:6px;" />
+              </div>
+            </div>
           </div>
           <div class="card half">
             <h3 style="margin: 0 0 8px; font-size: 18px">激光切割工艺</h3>
@@ -77,15 +111,15 @@
               <div style="margin-top: 10px; padding-left: 10px;">
                 <p style="margin: 0 0 8px; font-size: 12px; color: var(--muted);">所有9个练习项目的代码可在以下路径查看：</p>
                 <ul style="margin: 0; padding-left: 18px; font-size: 12px;">
-                  <li><a href="../../esp32/prac/01helloworld/code.txt">01-HelloWorld 代码</a></li>
-                  <li><a href="../../esp32/prac/02DataOut/code.txt">02-DataOut 代码</a></li>
-                  <li><a href="../../esp32/prac/03DataIn/code.txt">03-DataIn 代码</a></li>
-                  <li><a href="../../esp32/prac/04SimulateOut/code.txt">04-SimulateOut 代码</a></li>
-                  <li><a href="../../esp32/prac/05SimulateIn/code.txt">05-SimulateIn 代码</a></li>
-                  <li><a href="../../esp32/prac/06WIFI/code.txt">06-WiFi 代码</a></li>
-                  <li><a href="../../esp32/prac/07ControlDuoji/code.txt">07-ControlDuoji 代码</a></li>
-                  <li><a href="../../esp32/prac/08WIFIDuoji/code.txt">08-WIFIDuoji 代码</a></li>
-                  <li><a href="../../esp32/prac/09MakeANew/code.txt">09-MakeANew 代码</a></li>
+                  <li><a href="./esp32/prac/01helloworld/code.txt">01-HelloWorld 代码</a></li>
+                  <li><a href="./esp32/prac/02DataOut/code.txt">02-DataOut 代码</a></li>
+                  <li><a href="./esp32/prac/03DataIn/code.txt">03-DataIn 代码</a></li>
+                  <li><a href="./esp32/prac/04SimulateOut/code.txt">04-SimulateOut 代码</a></li>
+                  <li><a href="./esp32/prac/05SimulateIn/code.txt">05-SimulateIn 代码</a></li>
+                  <li><a href="./esp32/prac/06WIFI/code.txt">06-WiFi 代码</a></li>
+                  <li><a href="./esp32/prac/07ControlDuoji/code.txt">07-ControlDuoji 代码</a></li>
+                  <li><a href="./esp32/prac/08WIFIDuoji/code.txt">08-WIFIDuoji 代码</a></li>
+                  <li><a href="./esp32/prac/09MakeANew/code.txt">09-MakeANew 代码</a></li>
                 </ul>
               </div>
             </details>
@@ -98,9 +132,9 @@
             从原理图设计、PCB 布线、到文件输出，使用立创/EasyEDA 工具完成电路板设计。
           </p>
           <ul style="margin: 4px 0; padding-left: 18px; font-size: 13px;">
-            <li><a href="../../pcb/myPCB2.eprj2">主设计工程：myPCB2.eprj2</a></li>
-            <li><a href="../../pcb/hw1/class-5.6.epro2">课堂练习：class-5.6.epro2</a></li>
-            <li><a href="../../pcb/test/helloworld.eprj2">测试工程：helloworld.eprj2</a></li>
+            <li><a href="./pcb/myPCB2.eprj2">主设计工程：myPCB2.eprj2</a></li>
+            <li><a href="./pcb/hw1/class-5.6.epro2">课堂练习：class-5.6.epro2</a></li>
+            <li><a href="./pcb/test/helloworld.eprj2">测试工程：helloworld.eprj2</a></li>
           </ul>
         </div>
 
@@ -116,21 +150,21 @@
           </ul>
         </div>
 
-        <h3 style="margin: 26px 0 12px; font-size: 18px">3D 设计与打印展示</h3>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
-          <figure style="background:#fff;padding:8px;border-radius:8px;text-align:center;">
-            <img src="../3D_design/59B6CB3AEE80FF844C4F146F6D2F3178.png" alt="3D 打印示例 1" style="width:100%;height:160px;object-fit:cover;border-radius:6px;" />
-            <figcaption style="font-size:12px;color:var(--muted);margin-top:6px;">3D 打印示例 1</figcaption>
-          </figure>
-          <figure style="background:#fff;padding:8px;border-radius:8px;text-align:center;">
-            <img src="../3D_design/288153BFF1C2D3DF1582B6958E19525B.png" alt="3D 打印示例 2" style="width:100%;height:160px;object-fit:cover;border-radius:6px;" />
-            <figcaption style="font-size:12px;color:var(--muted);margin-top:6px;">3D 打印示例 2</figcaption>
-          </figure>
-          <figure style="background:#fff;padding:8px;border-radius:8px;text-align:center;">
-            <img src="../3D_design/0BCCC3B5930905A3B8F3F966480F276F.png" alt="3D 打印示例 3" style="width:100%;height:160px;object-fit:cover;border-radius:6px;" />
-            <figcaption style="font-size:12px;color:var(--muted);margin-top:6px;">3D 打印示例 3</figcaption>
-          </figure>
+        
+
+        <div style="border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin-top: 14px; background: rgba(122, 167, 255, 0.05);">
+          <h4 style="margin: 0 0 8px; font-size: 15px">学习过程感悟</h4>
+          <p style="margin: 0 0 8px; font-size: 13px; color: var(--muted)">
+            从“能跑起来”到“能复盘、可迭代”，这门课让我真正理解了工程实践不只是完成任务，更是持续改进的过程。
+          </p>
+          <ul style="margin: 4px 0; padding-left: 18px; font-size: 13px;">
+            <li><strong>关于 Git：</strong>每次提交都像一个学习节点，清晰的提交信息让我能快速回看问题来源和解决思路。</li>
+            <li><strong>关于 ESP32：</strong>硬件调试比想象中更需要耐心，串口输出和分步验证是定位问题最有效的方法。</li>
+            <li><strong>关于 PCB：</strong>从原理图到布线让我意识到“规范”决定后续效率，前期多检查能减少大量返工。</li>
+            <li><strong>关于 3D 打印：</strong>建模参数与打印效果紧密相关，小尺寸误差会在实体中被放大，必须反复测试。</li>
+            <li><strong>关于综合能力：</strong>我学会了把需求拆解成小任务，先实现最小可用版本，再逐步优化体验与稳定性。</li>
         </div>
+
       </section>
 
       <footer>
@@ -143,3 +177,4 @@
     <script src="./script.js"></script>
   </body>
 </html>
+
